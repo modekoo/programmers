@@ -51,7 +51,7 @@ class BestAlbumTest {
         HashMap<String, Integer> sumMap = new HashMap<String, Integer>();
         HashMap<String, HashMap<Integer, Integer>> resultMap = new HashMap<String, HashMap<Integer,Integer>>();
         
-        //Àå¸£º° ÇÕ ±¸ÇÏ±â
+        //Ã€Ã¥Â¸Â£ÂºÂ° Ã‡Ã• Â±Â¸Ã‡ÃÂ±Ã¢
         for(int i=0; i<genres.length; i++) {
         	HashMap<Integer, Integer> tempMap = new HashMap<Integer, Integer>();
         	tempMap.put(i, plays[i]);
@@ -67,11 +67,11 @@ class BestAlbumTest {
         	}
         }
         
-        //Àå¸£º° ³»¸²Â÷¼ø
+        //Ã€Ã¥Â¸Â£ÂºÂ° Â³Â»Â¸Â²Ã‚Ã·Â¼Ã¸
         List<Entry<String, Integer>> rankList = new LinkedList<>(sumMap.entrySet());
         rankList.sort(((o1, o2) -> o2.getValue() - o1.getValue()));
         
-        //³»¸²Â÷¼ø µÈ Àå¸£¿¡¼­ ³ë·¡º° ³»¸²Â÷¼ø ÈÄ ¼øÀ§
+        //Â³Â»Â¸Â²Ã‚Ã·Â¼Ã¸ ÂµÃˆ Ã€Ã¥Â¸Â£Â¿Â¡Â¼Â­ Â³Ã«Â·Â¡ÂºÂ° Â³Â»Â¸Â²Ã‚Ã·Â¼Ã¸ ÃˆÃ„ Â¼Ã¸Ã€Â§
         for(Entry<String, Integer> rank : rankList) {
         	String first = rank.getKey();
         	HashMap<Integer, Integer> tempMap = resultMap.get(first);

@@ -1,7 +1,6 @@
 package test;
 
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
@@ -42,10 +41,10 @@ class LottoTest {
 	public int[] solution(int[] lottos, int[] win_nums) {
 		int[] answer = {0, 0};
 
-		//ÃÖ°í´Â °¡Áø°ÍÁß ´Ù ¸Â´Â°Å max
-		//ÃÖÀú´Â ¸ø¸ÂÃß´Â°Å min
-		//¼øÀ§´Â 6,5,4,3,2,1
-		//0ÀÇ °¹¼ö¸¦ ±¸ÇÏ°í, ³ª¸ÓÁö °ªÀÌ ¸Â´ÂÁö È®ÀÎÇÏ±â
+		//ï¿½Ö°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Â´Â°ï¿½ max
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ß´Â°ï¿½ min
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 6,5,4,3,2,1
+		//0ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï°ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Â´ï¿½ï¿½ï¿½ È®ï¿½ï¿½ï¿½Ï±ï¿½
 
 		int zeroCnt = 0;
 		int hitCnt = 0;

@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 import org.junit.jupiter.api.Test;
 
-class HashRunningTest {
+class FHashRunningTest {
 
 	@Test
 	void test() {
